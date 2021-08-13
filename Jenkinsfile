@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('checking version') {
             steps {
                 bat 'javac -version'
             }
