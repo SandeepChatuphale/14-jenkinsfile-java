@@ -12,12 +12,7 @@ pipeline {
             steps {
                 bat 'javac Main.java'
             }
-            
-         stage('run') {
-            steps {
-                bat 'java Main'
-            }
-         }
+        
         }
     }
 }
