@@ -4,14 +4,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                bat 'javac -version'
             }
         }
-            
-        stage('Compile') {
+        
+        stage('compile') {
             steps {
-                sh 'javac Main.java'
+                bat 'javac Main.java'
             }
         }
-    }
-}
